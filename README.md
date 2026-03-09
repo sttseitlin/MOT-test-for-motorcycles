@@ -1,16 +1,16 @@
 # MOT test for motorcycles
-MOT Test is annual test of vehicle safety, roadworthiness aspects and exhaust emissions required in the United Kingdom for most vehicles over three years old. The goal of my project is to analyze results of MOT test committed by Class II, that is all motorcycles with or without sidecars. Class II includes Class I(motos up to 200cc). Period of analysis is 2024.
+The MOT Test is an annual test of vehicle safety, roadworthiness aspects and exhaust emissions required in the United Kingdom for most vehicles over three years old. The goal of this project is to analyze the results of MOT tests conducted by Class II vehicles, which include all motorcycles with or without sidecars. Class II also includes Class I(motorcycles up to 200cc). The period of analysis is 2024.
 
-In `'test_result'` table one "vehicle_id" can have several "test_id", meaning test results until last one were unsuccessful. Except failed and passed last tests, there are "vehicle_id" which owners decided not to retake the test for some reasons. Test is considered as "Failed" if one or more vehicle items have "Dangerous" or "Major" category in `['rfr_deficiency_category']` column and "F" for `['rfr_type_code']`. 
+In the `'test_result'` table, one "vehicle_id" can have several "test_id" values, meaning that the tests prior to the last one were unsuccessful. In addition to failed and passed final tests, there are also vehicle_id entries whose owners decided not to retake the test for various reasons. A test is considered failed if one or more vehicle items have the category "Dangerous" or "Major" in the `['rfr_deficiency_category']` column and "F" in the `['rfr_type_code']`. 
 
 The dataset is not included in this repository due to size constraints. You can download it from https://www.data.gov.uk/dataset/c63fca52-ae4c-4b75-bab5-8b4735e1a4c9/anonymised-mot-tests-and-results .
-You can also find detailed guide in "Supporting documents" section.
+A detailed guide can also be found in the "Supporting documents" section.
 
-The notebook already contains example outputs, so you can explore results without the dataset.
+The notebook already contains example outputs, so the results can be explored without downloading the dataset.
 
 ## Overview of tables
 ### **'test_result'** table
-Contains details of individual MOT tests and of the vehicle tested. All tests which could result in a valid pass result are included. 
+Contains details of individual MOT tests and the vehicle tested. All tests that could result in valid pass outcome are included. 
 Column Name  | Description | Notes
 --- | --- | ---
 **test_id** | Unique identifier for a test | 
@@ -62,7 +62,7 @@ completed_date | Date and time of test completion |
 <br>
 
 ### 'item_detail' table
-Contains details of individual RfRs
+Contains details of individual reasons for rejection (rfrs).
 | Column Name | Description | Notes |
 | :--- | :--- | :--- |
 | **rfr_id** | Reason for Rejection ID |  
@@ -79,7 +79,7 @@ Contains details of individual RfRs
 <br>
 
 ### 'item_group' table 
-Contains details of RfR groupings within the test item hierarchy. The top level group for a Test Class is always ‘Vehicle’, with a Test Item ID of 0. 
+Contains details of rfr groupings within the test item hierarchy. The top level group for a Test Class is always ‘Vehicle’, with a Test Item ID of 0. 
 | Column Name | Description | Notes |
 | :--- | :--- | :--- |
 | **test\_item\_id** | Test Item ID | Primary Key |
@@ -92,4 +92,4 @@ Contains details of RfR groupings within the test item hierarchy. The top level 
 
 ## Attribution
 
-Data Source: Anonymised MOT Tests and Results, licensed under the [Open Government Licence v3.0.](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/)
+Data Source: Anonymised MOT Tests and Results, licensed under the Open Government Licence v3.0.
