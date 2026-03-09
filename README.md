@@ -6,7 +6,7 @@ In `'test_result'` table one "vehicle_id" can have several "test_id", meaning te
 The dataset is not included in this repository due to size constraints. You can download it from https://www.data.gov.uk/dataset/c63fca52-ae4c-4b75-bab5-8b4735e1a4c9/anonymised-mot-tests-and-results .
 You can also find detailed guide in "Supporting documents" section.
 
-The notebooks already contain example outputs, so you can explore results without the dataset.
+The notebook already contains example outputs, so you can explore results without the dataset.
 
 ## Overview of tables
 ### **'test_result'** table
