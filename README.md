@@ -29,7 +29,7 @@ Column Name  | Description | Notes
 **first_use_date** | Vehicle date of first use | 
 **completed_date** | Date and time of test completion | 
 
-#### `test_result` column 
+#### `['test_result']` column 
 | Result Code | Result | Notes |
 | :--- | :--- | :--- |
 | P | Pass | Test Pass |
@@ -51,7 +51,7 @@ Contains details of individual MOT test failure items.
 | **dangerous_mark** | Dangerous Item Marker | Up to 19ᵗʰ May 2018, where a tester could choose to denote that a failure item was dangerous (will be dropped) |
 completed_date | Date and time of test completion | 
 
-#### `rfr_type` column
+#### `['rfr_type']` column
 | Type Code | RfR Type | Notes |
 | :--- | :--- | :--- |
 | F | Fail | A test failure item. |
