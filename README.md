@@ -90,15 +90,6 @@ Contains details of RfR groupings within the test item hierarchy. The top level 
 
 <br>
 
-### 'rfr_location' table
-Reference for Location IDs in Test Item Table
-| Column Name | Description | Notes |
-| :--- | :--- | :--- |
-| **id** | Failure Location ID | 
-| **lateral** | Lateral Location |Boolean value |
-| **vertical** | Vertical Location |Boolean value |
-| **longitudinal** | Longitudinal Location | Boolean value|
-
 ## Attribution
 
 "Data Source: Anonymised MOT Tests and Results, licensed under the [Open Government Licence v3.0.](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/)
